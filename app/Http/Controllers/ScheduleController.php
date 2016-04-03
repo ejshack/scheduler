@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Scheduler\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
+use Scheduler\Http\Requests;
 
 class ScheduleController extends Controller
 {
