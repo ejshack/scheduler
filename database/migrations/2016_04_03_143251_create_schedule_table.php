@@ -12,7 +12,7 @@ class CreateScheduleTable extends Migration
      */
     public function up()
     {
-        Schema::create('schedule', function (Blueprint $table) {
+        Schema::create('Schedule', function (Blueprint $table) {
             $table->increments('id');
             $table->string('employee');
             $table->string('manager');
@@ -29,6 +29,6 @@ class CreateScheduleTable extends Migration
      */
     public function down()
     {
-        Schema::drop('schedule');
+        Schema::drop('Schedule');
     }
 }
