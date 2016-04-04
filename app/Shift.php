@@ -4,7 +4,7 @@ namespace Scheduler;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Schedule extends Model
+class Shift extends Model
 {
     protected $fillable = [
         'employee',

@@ -3,6 +3,7 @@
 namespace Scheduler\Http\Controllers;
 
 use Scheduler\Http\Requests;
+use Scheduler\Shift;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,6 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $shifts = Shift::all();
+        return view('home', compact('shifts'));
     }
 }

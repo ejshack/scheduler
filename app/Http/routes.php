@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/addshift', 'ShiftsController@create');
+Route::post('/addshift', 'ShiftsController@store');
+Route::get('/showshifts', 'ShiftsController@show');
